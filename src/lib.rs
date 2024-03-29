@@ -7,8 +7,10 @@ struct Component;
 
 impl Guest for Component {
     /// Say hello!
-    fn hello_world() -> String {
-        "Hello, World!".to_string()
+    fn scream(input: String) -> String {
+        let mut s = input.to_uppercase();
+        s.push_str("!!1!");
+        s.into()
     }
 }
 

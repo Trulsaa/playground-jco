@@ -1,0 +1,17 @@
+{
+  "name": "playground-jco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cargo component check && cargo component build && jco transpile target/wasm32-wasi/debug/playground_jco.wasm -o target/jco"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bytecodealliance/preview2-shim": "^0.16.1"
+  }
+}
